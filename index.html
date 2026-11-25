@@ -34,17 +34,14 @@
 </head>
 <body>
   <div class="wrap">
-    <div class="card" style="display:flex;gap:16px;align-items:center;padding:16px 20px;margin-bottom:20px">
-      <svg width="64" height="64" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип ГПОУ ВАГПК">
-        <rect x="6" y="6" width="108" height="108" rx="22" fill="#111c30" stroke="#f59e0b" stroke-width="4"/>
-        <path d="M30 38h60v8H30zm0 18h60v8H30zm0 18h40v8H30z" fill="#e5eefc" opacity=".95"/>
-        <path d="M78 72l12 10-12 10V72z" fill="#f59e0b"/>
-        <text x="60" y="30" text-anchor="middle" font-size="14" fill="#f59e0b" font-family="Arial" font-weight="700">ГПОУ</text>
-      </svg>
-      <div>
-        <div class="eyebrow">Учебное заведение</div>
-        <div style="font-size:1.15rem;font-weight:700;color:#fff">ГПОУ ВАГПК</div>
-        <div class="muted" style="font-size:.92rem">Контакты и актуальная информация — на официальном сайте колледжа.</div>
+    <div class="card" style="padding:20px;margin-bottom:20px">
+      <div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap">
+        <img src="vagpk.svg" alt="Фото ГПОУ ВАГПК, г. Воркута" style="width:220px;max-width:100%;height:auto;border-radius:12px;border:1px solid var(--line);background:#fff">
+        <div>
+          <div class="eyebrow">Учебное заведение · г. Воркута</div>
+          <div style="font-size:1.2rem;font-weight:700;color:#fff">ГПОУ «Воркутинский арктический горно-политехнический колледж» (ВАГПК)</div>
+          <div class="muted" style="font-size:.93rem">169900, г. Воркута, ул. Яновского, д. 5 · Тел.: <a href="tel:+78215135506" style="color:var(--accent)">+7 (82151) 3-55-06</a> · <a href="mailto:vpt@minobr.rkomi.ru" style="color:var(--accent)">vpt@minobr.rkomi.ru</a></div>
+        </div>
       </div>
     </div>
     <header>
@@ -60,7 +57,7 @@
         <div class="eyebrow">Учебный проект · Blender · 3D-моделирование</div>
         <h1>3D-модель кирки</h1>
         <div class="fio">Автор: <strong>Исаев Дмитрий Александрович</strong></div>
-        <div class="fio">Специальность: «Информационные технологии и среды»</div>
+        <div class="fio">Специальность: «Информационные системы и программирование»</div>
       </div>
     </header>
 
@@ -71,10 +68,18 @@
     <div class="grid g2">
       <section class="card" id="model">
         <h2><span>01.</span> 3D-модель кирки</h2>
-        <figure>
-          <video autoplay muted loop playsinline controls src="kirka-video.mp4" poster="kirka-photo.png"></video>
-          <figcaption>3D-модель кирки, выполненная в Blender. Автор: Исаев Дмитрий Александрович.</figcaption>
-        </figure>
+        <div class="grid g2">
+          <figure>
+            <img src="kirka-photo.png?v=2" alt="Фото 3D-модели кирки в Blender" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <div style="display:none;padding:24px;border:1px dashed var(--line);border-radius:14px;color:var(--muted);text-align:center">Фото не загрузилось. Откройте kirka-photo.png рядом с index.html.</div>
+            <figcaption>Фото 3D-модели кирки.</figcaption>
+          </figure>
+          <figure>
+            <video autoplay muted loop playsinline controls src="kirka-video.mp4" poster="kirka-photo.png?v=2"></video>
+            <figcaption>Анимация/видео 3D-модели кирки.</figcaption>
+          </figure>
+        </div>
+        <figcaption style="margin-top:10px">3D-модель кирки, выполненная в Blender. Автор: Исаев Дмитрий Александрович.</figcaption>
       </section>
       <section class="card">
         <h2><span>02.</span> Назначение модели</h2>
@@ -148,7 +153,7 @@
 
     <section class="card" id="subjects">
       <h2><span>08.</span> Специальность и изучаемые предметы</h2>
-      <p><strong>Специальность:</strong> «Информационные технологии и среды».</p>
+      <p><strong>Специальность:</strong> «Информационные системы и программирование».</p>
       <p>Дисциплины формируют навыки программирования, работы с IT-системами, 3D-дизайна и понимания работы компьютера.</p>
       <div class="grid g2" style="margin-top:12px">
         <div class="mini"><h3>Разработка кода</h3><p>Логика, алгоритмы, написание и отладка программ, структура проектов.</p></div>
@@ -158,7 +163,7 @@
       </div>
     </section>
 
-    <footer>© 2026 Исаев Дмитрий Александрович · «Информационные технологии и среды» · 3D-модель кирки в Blender</footer>
+    <footer>© 2026 Исаев Дмитрий Александрович · «Информационные системы и программирование» · 3D-модель кирки в Blender</footer>
   </div>
 </body>
 </html>
