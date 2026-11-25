@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-модель кирки — Исаев Д.А.</title>
+  <style>
+    :root{--bg:#0b1220;--card:#18233a;--card2:#111c30;--accent:#f59e0b;--text:#e5eefc;--muted:#9fb0cc;--line:#263553}
+    *{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth}
+    body{font-family:Segoe UI,Arial,sans-serif;background:linear-gradient(180deg,#09101d,#111c33);color:var(--text);line-height:1.65}
+    .wrap{width:min(1100px,93%);margin:auto;padding:28px 0 48px}
+    header,.card{background:rgba(24,35,58,.94);border:1px solid var(--line);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.22)}
+    header{display:flex;gap:20px;align-items:center;padding:28px;margin-bottom:20px}
+    .logo{width:88px;height:88px;flex:0 0 88px}
+    .eyebrow{color:var(--accent);font-weight:700;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+    h1{font-size:clamp(1.9rem,4vw,3rem);line-height:1.15;margin:.2rem 0} h2{font-size:1.35rem;margin-bottom:14px;color:#fff}
+    h3{font-size:1.05rem;margin:14px 0 8px;color:#fff} h2 span,.accent{color:var(--accent)}
+    .fio,.muted{color:var(--muted)} .grid{display:grid;gap:20px}.g2{grid-template-columns:1.15fr .85fr}.g3{grid-template-columns:repeat(3,1fr)}
+    .card{padding:24px;margin-bottom:20px} p{color:#d7e3f7;margin-bottom:10px}
+    ul,ol{padding-left:20px;color:#d7e3f7} li{margin:6px 0}
+    figure video,figure img{width:100%;display:block;border-radius:14px;border:1px solid var(--line);background:#0b1220}
+    figcaption{color:var(--muted);font-size:.94rem;margin-top:10px;text-align:center}
+    .pill{display:inline-block;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card2);margin:4px 6px 0 0;color:#d7e3f7;font-size:.92rem}
+    table{width:100%;border-collapse:collapse;margin-top:8px;font-size:.95rem}
+    th,td{padding:10px 12px;border:1px solid var(--line);vertical-align:top;text-align:left}
+    th{background:#111c30;color:#fff} td{color:#d7e3f7}
+    .mini{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:16px}
+    nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+    nav a{color:var(--text);text-decoration:none;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:rgba(24,35,58,.7);font-size:.92rem}
+    nav a:hover{border-color:var(--accent);color:#fff}
+    footer{color:var(--muted);text-align:center;margin-top:24px;font-size:.92rem}
+    @media (max-width:900px){.g2,.g3{grid-template-columns:1fr}header{flex-direction:column;text-align:center}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" style="display:flex;gap:16px;align-items:center;padding:16px 20px;margin-bottom:20px">
+      <svg width="64" height="64" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип ГПОУ ВАГПК">
+        <rect x="6" y="6" width="108" height="108" rx="22" fill="#111c30" stroke="#f59e0b" stroke-width="4"/>
+        <path d="M30 38h60v8H30zm0 18h60v8H30zm0 18h40v8H30z" fill="#e5eefc" opacity=".95"/>
+        <path d="M78 72l12 10-12 10V72z" fill="#f59e0b"/>
+        <text x="60" y="30" text-anchor="middle" font-size="14" fill="#f59e0b" font-family="Arial" font-weight="700">ГПОУ</text>
+      </svg>
+      <div>
+        <div class="eyebrow">Учебное заведение</div>
+        <div style="font-size:1.15rem;font-weight:700;color:#fff">ГПОУ ВАГПК</div>
+        <div class="muted" style="font-size:.92rem">Контакты и актуальная информация — на официальном сайте колледжа.</div>
+      </div>
+    </div>
+    <header>
+      <svg class="logo" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Логотип">
+        <defs><linearGradient id="g" x1="20" y1="20" x2="100" y2="100"><stop stop-color="#f59e0b"/><stop offset="1" stop-color="#ef4444"/></linearGradient></defs>
+        <rect x="6" y="6" width="108" height="108" rx="28" fill="#111c30" stroke="#263553" stroke-width="4"/>
+        <path d="M28 34 L60 28 L92 34 L84 48 L60 44 L36 48 Z" fill="url(#g)"/>
+        <rect x="55" y="42" width="10" height="52" rx="5" fill="#cbd5e1"/>
+        <rect x="50" y="86" width="20" height="8" rx="4" fill="#94a3b8"/>
+        <text x="60" y="108" text-anchor="middle" font-size="14" fill="#e5eefc" font-family="Arial" font-weight="700">ИД</text>
+      </svg>
+      <div>
+        <div class="eyebrow">Учебный проект · Blender · 3D-моделирование</div>
+        <h1>3D-модель кирки</h1>
+        <div class="fio">Автор: <strong>Исаев Дмитрий Александрович</strong></div>
+        <div class="fio">Специальность: «Информационные технологии и среды»</div>
+      </div>
+    </header>
+
+    <nav>
+      <a href="#model">Модель</a><a href="#pickaxe">О кирке</a><a href="#types">Виды</a><a href="#3d">3D-моделирование</a><a href="#blender">Blender</a><a href="#use">Применение</a><a href="#subjects">Предметы</a>
+    </nav>
+
+    <div class="grid g2">
+      <section class="card" id="model">
+        <h2><span>01.</span> 3D-модель кирки</h2>
+        <figure>
+          <video autoplay muted loop playsinline controls src="kirka-video.mp4" poster="kirka-photo.png"></video>
+          <figcaption>3D-модель кирки, выполненная в Blender. Автор: Исаев Дмитрий Александрович.</figcaption>
+        </figure>
+      </section>
+      <section class="card">
+        <h2><span>02.</span> Назначение модели</h2>
+        <p>Модель создана для демонстрации навыков 3D-моделирования в Blender: построение формы, работа с пропорциями, материалами и визуализацией объекта.</p>
+        <h3>Где может использоваться</h3>
+        <ul>
+          <li>Учебные проекты и портфолио.</li>
+          <li>Игровые сцены и ассеты.</li>
+          <li>Анимация и визуализация.</li>
+          <li>Демонстрация этапов моделирования.</li>
+          <li>Основа для текстурирования, рига или 3D-печати.</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="card" id="pickaxe">
+      <h2><span>03.</span> Всё о кирке</h2>
+      <p><strong>Кирка</strong> — ручной ударный инструмент для разрушения твёрдых материалов: камня, мёрзлого грунта, руды, старой кладки. Работает за счёт концентрации силы удара на узком острие.</p>
+      <div class="grid g3" style="margin-top:14px">
+        <div class="mini"><h3>Устройство</h3><ul><li><strong>Головка</strong> — рабочая металлическая часть.</li><li><strong>Острие/клюв</strong> — для раскалывания.</li><li><strong>Молоток/лезвие</strong> — на некоторых моделях с другой стороны.</li><li><strong>Проушина</strong> — отверстие для рукояти.</li><li><strong>Рукоять/черенок</strong> — дерево, стеклопластик, металл.</li></ul></div>
+        <div class="mini"><h3>Материалы</h3><ul><li>Головка: закалённая/углеродистая сталь.</li><li>Рукоять: ясень, гикори, фибергласс.</li><li>Покрытие: краска, порошковое покрытие, антикоррозия.</li><li>В 3D: металл, дерево, PBR-текстуры.</li></ul></div>
+        <div class="mini"><h3>Принцип работы</h3><ul><li>Узкое острие создаёт высокое давление.</li><li>Длинная рукоять увеличивает размах и энергию удара.</li><li>Масса головки задаёт инерцию.</li><li>Угол заточки влияет на проникновение в материал.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="card" id="types">
+      <h2><span>04.</span> Виды кирок и сходных инструментов</h2>
+      <table>
+        <tr><th>Вид</th><th>Особенности</th><th>Применение</th></tr>
+        <tr><td>Шахтёрская кирка</td><td>Два острых конца или острие + молоток</td><td>Горные работы, руда, камень</td></tr>
+        <tr><td>Кайло</td><td>Тяжёлая головка, усиленный удар</td><td>Плотный грунт, строительство, демонтаж</td></tr>
+        <tr><td>Кирка-мотыга</td><td>Острие с одной стороны, лезвие с другой</td><td>Земляные работы, корни, сад</td></tr>
+        <tr><td>Геологическая кирка</td><td>Лёгкая, точная, часто с плоским концом</td><td>Геология, раскалывание образцов</td></tr>
+        <tr><td>Ледоруб/альпинистская кирка</td><td>Специализированная форма, клюв и темляк</td><td>Лёд, снег, альпинизм</td></tr>
+        <tr><td>Игровая кирка</td><td>Стилизованная форма, упрощённая геометрия</td><td>Игры, анимация, концепт-арт</td></tr>
+      </table>
+    </section>
+
+    <section class="card" id="3d">
+      <h2><span>05.</span> Основы 3D-моделирования</h2>
+      <p><strong>3D-моделирование</strong> — создание трёхмерного цифрового объекта в специальном ПО. Модель описывается геометрией, материалами, текстурами и может быть отрендерена, анимирована или экспортирована в игру/движок.</p>
+      <div class="grid g2">
+        <div class="mini"><h3>Основные понятия</h3><ul><li><strong>Вершина (Vertex)</strong> — точка в пространстве.</li><li><strong>Ребро (Edge)</strong> — линия между вершинами.</li><li><strong>Полигон/грань (Face)</strong> — поверхность.</li><li><strong>Меш (Mesh)</strong> — сетка объекта.</li><li><strong>UV-развёртка</strong> — проекция 3D-поверхности на 2D-текстуру.</li><li><strong>Нормали</strong> — направление поверхности для освещения.</li></ul></div>
+        <div class="mini"><h3>Виды моделирования</h3><ul><li><strong>Полигональное</strong> — ручная работа с мешем.</li><li><strong>Sculpting</strong> — цифровая лепка.</li><li><strong>Процедурное</strong> — создание через правила/ноды.</li><li><strong>Hard-surface</strong> — твёрдые объекты: инструменты, техника.</li><li><strong>Low/High poly</strong> — для игр или детализированного рендера.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="card" id="blender">
+      <h2><span>06.</span> Этапы создания модели в Blender</h2>
+      <div class="grid g3">
+        <div class="mini"><h3>1. Референсы и блокинг</h3><p>Сбор изображений, определение размеров и пропорций, создание простой формы.</p></div>
+        <div class="mini"><h3>2. Моделирование</h3><p>Работа в Edit Mode: Extrude, Bevel, Loop Cut, Scale, Mirror, Subdivision.</p></div>
+        <div class="mini"><h3>3. UV и текстуры</h3><p>Развёртка UV, создание/назначение текстур: Base Color, Roughness, Metallic, Normal.</p></div>
+        <div class="mini"><h3>4. Материалы</h3><p>Настройка Shader Editor, PBR-материалы, металл для головки и дерево для рукояти.</p></div>
+        <div class="mini"><h3>5. Свет и камера</h3><p>Постановка освещения, выбор ракурса, композиция кадра.</p></div>
+        <div class="mini"><h3>6. Рендер и экспорт</h3><p>Рендер в Eevee/Cycles, экспорт в PNG/MP4, FBX/OBJ/GLB для других программ.</p></div>
+      </div>
+      <h3 style="margin-top:16px">Полезные инструменты Blender</h3>
+      <div>
+        <span class="pill">Edit Mode</span><span class="pill">Modifiers</span><span class="pill">Mirror</span><span class="pill">Subdivision Surface</span><span class="pill">Bevel</span><span class="pill">UV Editing</span><span class="pill">Shader Editor</span><span class="pill">Eevee/Cycles</span><span class="pill">Outliner</span><span class="pill">Transform</span>
+      </div>
+    </section>
+
+    <section class="card" id="use">
+      <h2><span>07.</span> Применение 3D-моделей</h2>
+      <div class="grid g2">
+        <div class="mini"><h3>Сферы</h3><ul><li><strong>Игры</strong> — игровые предметы, окружение, персонажи.</li><li><strong>Кино/анимация</strong> — реквизит, визуальные эффекты.</li><li><strong>Образование</strong> — наглядные модели и симуляции.</li><li><strong>Дизайн</strong> — прототипы и визуализация продуктов.</li><li><strong>3D-печать</strong> — подготовка физического объекта.</li><li><strong>AR/VR</strong> — интерактивные объекты.</li></ul></div>
+        <div class="mini"><h3>Форматы файлов</h3><ul><li><strong>.blend</strong> — исходник Blender.</li><li><strong>.fbx</strong> — игры/движки, анимация.</li><li><strong>.obj</strong> — универсальная геометрия.</li><li><strong>.glb/.gltf</strong> — web и realtime.</li><li><strong>.png/.mp4</strong> — рендер и видео.</li><li><strong>.stl</strong> — 3D-печать.</li></ul></div>
+      </div>
+    </section>
+
+    <section class="card" id="subjects">
+      <h2><span>08.</span> Специальность и изучаемые предметы</h2>
+      <p><strong>Специальность:</strong> «Информационные технологии и среды».</p>
+      <p>Дисциплины формируют навыки программирования, работы с IT-системами, 3D-дизайна и понимания работы компьютера.</p>
+      <div class="grid g2" style="margin-top:12px">
+        <div class="mini"><h3>Разработка кода</h3><p>Логика, алгоритмы, написание и отладка программ, структура проектов.</p></div>
+        <div class="mini"><h3>Информационные технологии</h3><p>Цифровые инструменты, данные, сети, программное обеспечение, IT-процессы.</p></div>
+        <div class="mini"><h3>3D-моделирование и дизайн</h3><p>Создание 3D-объектов, композиция, материалы, визуализация, Blender.</p></div>
+        <div class="mini"><h3>Операционные системы</h3><p>Работа ОС, файлы, процессы, память, взаимодействие ПО и оборудования.</p></div>
+      </div>
+    </section>
+
+    <footer>© 2026 Исаев Дмитрий Александрович · «Информационные технологии и среды» · 3D-модель кирки в Blender</footer>
+  </div>
+</body>
+</html>
